@@ -16,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="m-4 max-w-8xl">
-        <Nav />
-        {children}
+      <body className="mx-[2rem]">
+        <div className='p-2 m-4 max-w-full max-h-full xl:max-h-[42rem] h-screen bg-bg_image rounded-md'>
+          <Nav />
+          {children}
+        </div>
       </body>
     </html>
   )
