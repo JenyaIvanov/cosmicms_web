@@ -4,9 +4,15 @@ import Image from "next/image"
 export default function Nav() {
   
   return (
-    <nav className="flex justify-between items-center py-8 ">
+    <nav className="flex justify-between items-center">
       <Link href={"/"}>
-        <h1 className="font-bold text-lg">SendIt.</h1>
+        <Image 
+          src={"/img/logo.png"}
+          width={100}
+          height={100}
+          alt="Logo"
+        />
+        <h1 className="font-bold text-3xl">CosmicMS</h1>
       </Link>
       <ul className="flex items-center gap-6">
         <Link href={"/"}>
