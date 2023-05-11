@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <nav className="">
       <div className="flex justify-between items-center">
-      <Link href={"/"}>
+      <Link href={process.env.navMainLink}>
         <div className="flex flex-row gap-0 items-center">
             <Image 
               className="drop-shadow-xl"
@@ -19,7 +19,7 @@ export default function Nav() {
               height={150}
               alt="Logo"
             />
-            <h1 className="font-bold text-6xl -mx-[10vh] text-white drop-shadow-xl">CosmicMS</h1>
+            <h1 className="font-bold text-6xl -mx-[10vh] text-white drop-shadow-xl">{process.env.serverName}</h1>
         </div>
       </Link>
       <div className="md:hidden flex items-center">
@@ -34,16 +34,16 @@ export default function Nav() {
 
       {/* Desktop Menu  */}
       <ul className="hidden md:flex items-center gap-6 text-white p-2 px-3 rounded-md bg-slate-300 bg-opacity-10 shadow-md ">
-        <Link href={"/"} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+        <Link href={process.env.navNewsLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li>News</li>
         </Link>
-        <Link href={"/"} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+        <Link href={process.env.navDownloadLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li>Download</li>
         </Link>
-        <Link href={"/"} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+        <Link href={process.env.navDiscordLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li>Discord</li>
         </Link>
-        <Link href={"/"} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+        <Link href={process.env.navRegisterLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li className="font-bold">Register</li>
         </Link>
       </ul>
@@ -55,16 +55,16 @@ export default function Nav() {
         (
           <div className="md:hidden">
           <ul className="max-h-full max-w-12 gap-6 text-white p-2 px-3 rounded-md bg-slate-300 bg-opacity-10 shadow-md ">
-          <Link href={"/"} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+          <Link href={process.env.navNewsLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
               <li>News</li>
           </Link>
-          <Link href={"/"} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+          <Link href={process.env.navDownloadLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
               <li>Download</li>
           </Link>
-          <Link href={"/"} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+          <Link href={process.env.navDiscordLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
               <li>Discord</li>
           </Link>
-          <Link href={"/"} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+          <Link href={process.env.navRegisterLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
               <li className="font-bold">Register</li>
           </Link>
           </ul>
