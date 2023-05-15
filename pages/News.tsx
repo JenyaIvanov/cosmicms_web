@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function News() {
     return (
-        <div className="rounded-md mt-2 bg-slate-600 bg-opacity-30 shadow-md text-white drop-shadow-lg">
+        <div className="p-2 rounded-md mt-2 bg-slate-600 bg-opacity-30 shadow-md text-white drop-shadow-lg">
             <h1 className="text-3xl font-bold drop-shadow-lg">News</h1>
             <div className="flex-col mt-4">
                 <Image src={"/img/PinkBean.png"} className=" object-contain drop-shadow-sm" alt={"Logo"} height={150} width={150}/>

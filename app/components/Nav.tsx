@@ -2,24 +2,31 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react";
+import { Roboto_Slab } from "next/font/google"
+
+const roboto = Roboto_Slab({
+  subsets: ["latin"],
+  weight: ["200", "500", "700"],
+  variable: "--font-roboto_slab",
+})
 
 export default function Nav() {
   const [isOpen, setOpen] = useState(false);
   const toggleMenu = () => setOpen(!isOpen);
   
   return (
-    <nav className="">
-    <div className="flex justify-between items-center">
+    <nav>
+    <div className="flex justify-between items-center w-full z-10">
     <Link href={process.env.navMainLink}>
-      <div className="flex flex-row gap-0 items-center">
+      <div className="flex flex-row gap-0 items-center xl:scale-150 md:scale-125 scale-75">
           <Image 
-            className="drop-shadow-xl"
+            className="object-contain drop-shadow-sm"
             src={"/img/logo.png"}
-            width={150}
-            height={150}
+            width={125}
+            height={125}
             alt="Logo"
           />
-          <h1 className="font-bold text-6xl -mx-[10vh] text-white drop-shadow-xl">{process.env.serverName}</h1>
+          <h1 className={`font-bold text-6xl -mx-[6vh] text-white drop-shadow-xl ${roboto.variable} font-sans`}>{process.env.serverName}</h1>
       </div>
     </Link>
     <div className="md:hidden flex items-center">
@@ -53,7 +60,7 @@ export default function Nav() {
     {/* Mobile Menu  */}
     {isOpen ?
       (
-        <div className="md:hidden">
+        <div className="md:hidden mb-2">
         <ul className="max-h-full max-w-12 gap-6 text-white p-2 px-3 rounded-md bg-slate-300 bg-opacity-10 shadow-md ">
         <Link href={process.env.navNewsLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li>News</li>
