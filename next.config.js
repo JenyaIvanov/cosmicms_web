@@ -3,11 +3,15 @@ const nextConfig = {
     env: {
         // Website Config
         serverName: 'CosmicMS',
+        navVoteLink: "http://vote-link-goes-here/", // Vote Link
+        footerDiscordLink: "http://discord-link-goes-here/", // Discord Link
+
+
+        // Navigation
+        navRegisterLink: "/Register/",
         navMainLink: "/",
         navNewsLink: "/News/",
         navDownloadLink: "/Download/",
-        navVoteLink: "http://discord-link-goes-here/", // Discord Link
-        navRegisterLink: "/Register/",
 
 
         // Admin Panel Config
