@@ -6,7 +6,7 @@ const nextConfig = {
         navMainLink: "/",
         navNewsLink: "/News/",
         navDownloadLink: "/Download/",
-        navDiscordLink: "http://discord-link-goes-here/", // Discord Link
+        navVoteLink: "http://discord-link-goes-here/", // Discord Link
         navRegisterLink: "/Register/",
 
 

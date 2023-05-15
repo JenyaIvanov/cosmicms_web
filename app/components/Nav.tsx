@@ -40,8 +40,8 @@ export default function Nav() {
       <Link href={process.env.navDownloadLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
           <li>Download</li>
       </Link>
-      <Link href={process.env.navDiscordLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
-          <li>Discord</li>
+      <Link href={process.env.navVoteLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+          <li>Vote</li>
       </Link>
       <Link href={process.env.navRegisterLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
           <li className="font-bold">Register</li>
@@ -61,8 +61,8 @@ export default function Nav() {
         <Link href={process.env.navDownloadLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li>Download</li>
         </Link>
-        <Link href={process.env.navDiscordLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
-            <li>Discord</li>
+        <Link href={process.env.navVoteLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
+            <li>Vote</li>
         </Link>
         <Link href={process.env.navRegisterLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li className="font-bold">Register</li>
