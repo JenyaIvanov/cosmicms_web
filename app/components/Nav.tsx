@@ -41,9 +41,6 @@ export default function Nav() {
 
     {/* Desktop Menu  */}
     <ul className="hidden md:flex items-center gap-6 text-white p-2 px-3 rounded-md bg-slate-300 bg-opacity-10 shadow-md ">
-      <Link href={process.env.navNewsLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
-          <li>News</li>
-      </Link>
       <Link href={process.env.navDownloadLink} className="rounded-md hover:outline-dotted hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
           <li>Download</li>
       </Link>
@@ -62,9 +59,6 @@ export default function Nav() {
       (
         <div className="md:hidden mb-2">
         <ul className="max-h-full max-w-12 gap-6 text-white p-2 px-3 rounded-md bg-slate-300 bg-opacity-10 shadow-md ">
-        <Link href={process.env.navNewsLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
-            <li>News</li>
-        </Link>
         <Link href={process.env.navDownloadLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li>Download</li>
         </Link>
@@ -74,6 +68,17 @@ export default function Nav() {
         <Link href={process.env.navRegisterLink} className="block rounded-md hover:text-yellow-200 outline-orange-400 py-1.5 px-2.5 drop-shadow-xl">
             <li className="font-bold">Register</li>
         </Link>
+            <hr className="mt-2 mb-2 opacity-30" />
+            <li>
+                    <Link href={process.env.footerDiscordLink} className="rounded-md pt-4 px-1.5 flex items-center">
+                      <Image src={"/img/discordLogo.png"} className=" object-contain drop-shadow-sm rounded-lg opacity-50 hover:opacity-100 hover:scale-110" alt={"Discord Logo"} height={40} width={40} />
+                      <span className="px-2 font-serif">Join Our Discord!</span>
+                    </Link>
+            </li>
+            <li>
+            <span className="text-sm text-black sm:text-center opacity-50 block rounded-md py-1.5 px-2.5">© 2023 {process.env.serverName}. All Rights Reserved.</span>
+            </li>
+
         </ul>
       </div>
       ) : ""
