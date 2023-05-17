@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useState } from "react";
+import toast from "react-hot-toast"
 
 export default function Admin() {
-
+    let toastPostID: string
     const [isLoggedIn, setOpen] = useState(false);
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -13,13 +14,16 @@ export default function Admin() {
             password: event.target.password.value,
         };
 
+        
+
 
         if(data.username == process.env.adminAccount && data.password == process.env.adminPassword){
             // Toast Message
-
+            toast.success("Welcome 👋", { id: toastPostID })
             setOpen(!isLoggedIn)
         } else {
             // Toast Message
+            toast.error("Wrong username or password motherfucka", { id: toastPostID })
         }
     };
 
