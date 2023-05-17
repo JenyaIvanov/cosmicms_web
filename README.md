@@ -1,8 +1,8 @@
 This is an open source & free to use Maplestory v83 website 'web-app' created for the CosmicMS community.
 
 ## Preview (16/05/23)
-![Desktop View](http://url/to/img.png](https://i.ibb.co/ydcX479/desktop.png)
-![Mobile View](http://url/to/img.png](https://i.ibb.co/Sdq9m8n/mobile.png)
+![Desktop View](https://i.ibb.co/ydcX479/desktop.png)
+![Mobile View](https://i.ibb.co/Sdq9m8n/mobile.png)
 
 ## CosmicMS Project
 [Github/P0nk/Cosmic](https://github.com/P0nk/Cosmic)
