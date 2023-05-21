@@ -10,9 +10,10 @@ const nextConfig = {
         // Download
         clientSupportsMac: true,
         clientSupportsWindows: true,
-        downloadLinks: [
+        clientDownloadLinks: [
           "localhost:3000",
           "localhost:3000/News",
+          "localhost:3000/Download",
         ],
 
 

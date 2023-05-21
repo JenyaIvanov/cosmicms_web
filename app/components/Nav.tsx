@@ -29,7 +29,7 @@ export default function Nav() {
           />
           
           {/* Server Title */}
-          <h1 className={`font-bold text-6xl -mx-[6vh] text-white drop-shadow-xl ${roboto.variable} font-sans`}>{process.env.serverName}</h1>
+          <h1 className={`font-bold text-6xl -mx-[6vh] text-white drop-shadow-xl ${roboto.variable} font-sans z-10`}>{process.env.serverName}</h1>
           
           {/* Logo Art */}
           <Image 
