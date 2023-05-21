@@ -11,7 +11,7 @@ export const metadata = {
 export default function Layout({children}: {children: React.ReactNode}) {
   return (
     <main className='h-screen w-screen scale-[95%] drop-shadow-md'> 
-      <div className="rounded-xl bg-bg_image bg-clone bg-cover h-screen w-screen p-2">
+      <div className="rounded-xl bg-bg_image bg-clone bg-cover h-screen w-screen p-2 md:p-3">
             <Toaster/>
             <Nav />
             {children}

@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Download() {
     return (
-        <div className="p-2 rounded-md bg-gray-600 bg-opacity-80 shadow-md text-white drop-shadow-lg mt-5">
+        <div className="p-2 rounded-md bg-gray-600 bg-opacity-70 shadow-md text-white drop-shadow-lg mt-5 md:p-5">
             <h1 className="text-6xl -mx-6 mb-2 -mt-5 font-bold drop-shadow-lg p-5 text-center md:text-start">
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-pink-500 from-pink-600">
                 Download
@@ -20,7 +20,7 @@ export default function Download() {
                     <p> We provide system support information listed below for a smooth gaming experience. </p>  
                 </div>
             </div>  
-            <hr className="mt-2 drop-shadow-md" />
+            <hr className="mt-3 drop-shadow-md" />
             {/* <div className="mt-4">
                 <ul>
                     <Link href={"/News"} className=" hover:text-yellow-200 block bg-slate-700 rounded-md w-fill p-2 m-2">
