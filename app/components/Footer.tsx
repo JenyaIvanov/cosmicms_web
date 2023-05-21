@@ -6,7 +6,7 @@ export default function Nav() {
   
   return (
    <div>
-        <footer className="rounded-lg m-4 fixed inset-x-0 bottom-0 shadow-md hidden xl:block">
+        <footer className="rounded-lg m-4 fixed inset-x-0 bottom-0 shadow-md hidden md:block">
             <div className="mx-auto max-w-screen-xl p-2 md:flex md:items-center md:justify-between">
             <span className="text-sm text-black sm:text-center opacity-50">© 2023  
                 <Link href={process.env.navMainLink} className="hover:text-yellow-200">
