@@ -8,13 +8,7 @@ const nextConfig = {
 
 
         // Download
-        clientSupportsMac: true,
-        clientSupportsWindows: true,
-        clientDownloadLinks: [
-          "localhost:3000",
-          "localhost:3000/News",
-          "localhost:3000/Download",
-        ],
+        // Please configure download links in the Download page located at pages/Download.tsx
 
 
         // Navigation
